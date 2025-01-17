@@ -35,4 +35,3 @@ jobs:
         id: deploy
         with:
           project-key: nitro-cloudflar-iat2
-          directory: .output
