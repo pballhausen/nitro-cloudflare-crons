@@ -5,8 +5,11 @@
     "dev": "nuxt dev",
     "prepare": "nuxt prepare"
   },
+  "dependencies": {
+    "@nuxthub/core": "^0.8.12",
+    "nuxt": "^3.15.0"
+  },
   "devDependencies": {
-    "nuxt": "^3.15.0",
-    "@nuxthub/core": "^0.8.11"
+    "wrangler": "^3.103.2"
   }
 }

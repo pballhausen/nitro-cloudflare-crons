@@ -1,8 +1,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxthub/core'],
-
   nitro: {
-    srcDir: "server",
     experimental: {
       tasks: true,
       openAPI: true,
@@ -12,11 +10,10 @@ export default defineNuxtConfig({
     },
     preset: 'cloudflare-module'
   },
-
   hub: {
-    database: false,
-    blob: false,
-    kv: false,
+    database: true,
+    blob: true,
+    kv: true,
   },
   compatibilityDate: '2025-01-17'
 });
