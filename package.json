@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "nitro build",
-    "dev": "nitro dev",
-    "prepare": "nitro prepare",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "prepare": "nuxt prepare",
     "preview": "node .output/server/index.mjs"
   },
   "devDependencies": {
