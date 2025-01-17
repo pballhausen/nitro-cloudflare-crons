@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxthub/core'],
+
   nitro: {
     srcDir: "server",
     experimental: {
@@ -11,9 +12,11 @@ export default defineNuxtConfig({
     },
     preset: 'cloudflare-module'
   },
+
   hub: {
     database: false,
     blob: false,
     kv: false,
-  }
+  },
+  compatibilityDate: '2025-01-17'
 });
