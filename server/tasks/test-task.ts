@@ -1,10 +1,10 @@
 export default defineTask({
   meta: {
-    name: "my-task",
+    name: "test-task",
     description: "A specific task",
   },
   run({ payload, context }) {
-    console.log("Running my task...");
+    console.log("Running my test task...");
 
     // Example of calling an external API that don't support crons
     // $fetch('https://my-nuxt-app.com/api/my-endpoint', {

@@ -1,19 +1,19 @@
 export default defineNuxtConfig({
   modules: ['@nuxthub/core'],
   nitro: {
+    preset: 'cloudflare-module',
     experimental: {
       tasks: true,
       openAPI: true,
     },
     scheduledTasks: {
-      '* * * * *': ['my-task']
+      '* * * * *': ['test-task']
     },
-    preset: 'cloudflare-module'
   },
   hub: {
-    database: true,
-    blob: true,
-    kv: true,
+    database: false,
+    blob: false,
+    kv: false,
   },
   compatibilityDate: '2025-01-17'
 });
